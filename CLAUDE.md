@@ -3,6 +3,27 @@
 用大白话**中文**讲透**美式英语**的学习站。零基础一看就懂。
 纯静态、零依赖、零构建:浏览器直接打开 `index.html` 即可运行(`file://` 可用),GitHub Pages 直接托管。
 
+## 线上地址与部署(2026-06-11 上线)
+
+- **线上站点(手机/电脑/平板均可)**:https://wowchen.github.io/english-made-simple/
+- **GitHub 仓库**:https://github.com/wowchen/english-made-simple(public,账号 `wowchen`)
+- **托管方式**:GitHub Pages,`main` 分支根目录 `/`,提交后约 1 分钟自动重新构建上线。
+- **提交身份**:本仓库 `user.email=wowchen@126.com`(`git config` 仅本仓库,不影响全局)。
+- **重要**:此仓库是**独立仓库**,仅含本项目。父目录 `/Users/Solun/AGI/Claude` 原先那个破损 git 仓库(origin 误指向他人仓库 Li-Evan/Bloom)已删除——**切勿在父目录重新 `git init` 或把多个项目混进一个仓库推送**。
+
+### 更新线上内容(改完代码后)
+
+```bash
+cd /Users/Solun/AGI/Claude/20260609-english-made-simple
+node --check content/**/*.js        # 习惯:推送前先过语法检查
+git add .
+git commit -m "说明改动"            # 作者已固定为 wowchen@126.com
+git push                            # 推 origin/main,Pages 约 1 分钟后自动更新
+```
+
+- 查 Pages 构建状态:`gh api repos/wowchen/english-made-simple/pages -q .status`(`built` = 已上线)。
+- 进度同步(localStorage→GitHub)是**用户在站内「设置」里配置**的独立 private 仓库 + fine-grained PAT,与本部署无关;代码里**永远不要**出现 token。
+
 **架构与决策依据见 `需求与讨论.md`(7 条 ADR + 体验层原则),不要违背它。**
 `design/` 是风格选型稿,**保留,不要删除**;定稿为风格 D(晨读课本 + 侧边便利贴索引),全站样式令牌在 `assets/css/main.css` 顶部。
 
