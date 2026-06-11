@@ -12,7 +12,8 @@
     { id: 'speak',   no: 5, short: '口语', title: '口语表达',  sub: '高频句型 · 场景对话',         desc: '高频口语句型、地道美式表达、俚语习语、礼貌与语气、点餐/问路/社交/工作场景对话。' },
     { id: 'read',    no: 6, short: '阅读', title: '阅读',      sub: '长难句 · 阅读策略',           desc: '长难句拆解、略读/精读、阅读策略。' },
     { id: 'write',   no: 7, short: '写作', title: '写作',      sub: '句段篇 · 避坑 · 邮件',        desc: '句→段→篇、标点、拼写规则、中式英语避坑、邮件/简历。' },
-    { id: 'culture', no: 8, short: '文化', title: '文化与语用', sub: '美英差异 · small talk',      desc: '美式 vs 英式差异、small talk 潜规则、文化梗、节日、网络缩略语。' }
+    { id: 'culture', no: 8, short: '文化', title: '文化与语用', sub: '美英差异 · small talk',      desc: '美式 vs 英式差异、small talk 潜规则、文化梗、节日、网络缩略语。' },
+    { id: 'travel',  no: 9, short: '旅行', title: '旅行英语',   sub: '全场景闭环 · 出发到回家',    desc: '一次完整出国旅程的实战英语:行前打底→机场航班→入境海关→交通→酒店→餐饮→购物→观光→就医应急→银行通讯→社交,每个场景配关键句点读、保命句与中国游客避坑。' }
   ].forEach(EMS.registerModule);
 
   /* 学习路线:有序课程 id。未编写的课程先占位(title 照写),
@@ -123,6 +124,36 @@
     { id: 'culture-06-humor',     module: 'culture', title: '美式幽默与玩笑的分寸' },
     { id: 'culture-07-manners',   module: 'culture', title: '餐桌与做客礼仪' },
     { id: 'culture-08-taboo',     module: 'culture', title: '禁忌话题与政治正确' },
-    { id: 'culture-09-memes',     module: 'culture', title: '日常文化梗与流行引用' }
+    { id: 'culture-09-memes',     module: 'culture', title: '日常文化梗与流行引用' },
+
+    { id: 'travel-01-survival',     module: 'travel', title: '旅行模块导览 + 万能保命 10 句' },
+    { id: 'travel-02-patterns',     module: 'travel', title: '8 大黄金句型:覆盖 80% 旅行需求' },
+    { id: 'travel-03-numbers',      module: 'travel', title: '数字·价格·金钱:别听错说错' },
+    { id: 'travel-04-time',         module: 'travel', title: '时间·日期·航班时刻' },
+    { id: 'travel-05-polite',       module: 'travel', title: '礼貌核心句 + 旅行版 Chinglish 避坑' },
+    { id: 'travel-06-checkin',      module: 'travel', title: '机场①:值机柜台 check-in' },
+    { id: 'travel-07-security',     module: 'travel', title: '机场②:安检 TSA' },
+    { id: 'travel-08-boarding',     module: 'travel', title: '机场③:登机口·候机·转机' },
+    { id: 'travel-09-onplane',      module: 'travel', title: '机场④:在飞机上' },
+    { id: 'travel-10-baggage',      module: 'travel', title: '机场⑤:行李丢失/延误报失' },
+    { id: 'travel-11-immigration',  module: 'travel', title: '入境①:边检窗口问答' },
+    { id: 'travel-12-customs',      module: 'travel', title: '入境②:海关申报 + 提取行李' },
+    { id: 'travel-13-rideshare',    module: 'travel', title: '交通①:出租车·Uber·Lyft' },
+    { id: 'travel-14-transit',      module: 'travel', title: '交通②:地铁·公交·长途火车' },
+    { id: 'travel-15-carrental',    module: 'travel', title: '交通③:租车 car rental' },
+    { id: 'travel-16-directions',   module: 'travel', title: '交通④:问路 + GPS 失灵救命句' },
+    { id: 'travel-17-hotel-checkin', module: 'travel', title: '酒店①:入住 check-in' },
+    { id: 'travel-18-hotel-issues', module: 'travel', title: '酒店②:房间问题 + 客房服务' },
+    { id: 'travel-19-hotel-checkout', module: 'travel', title: '酒店③:退房 + 投诉升级' },
+    { id: 'travel-20-dining-order', module: 'travel', title: '餐饮①:预订 + 入座点餐' },
+    { id: 'travel-21-dining-dietary', module: 'travel', title: '餐饮②:过敏与特殊饮食必说句' },
+    { id: 'travel-22-dining-pay',   module: 'travel', title: '餐饮③:结账小费 + 快餐咖啡' },
+    { id: 'travel-23-shopping',     module: 'travel', title: '购物:询问·试穿·退换·退税' },
+    { id: 'travel-24-sightseeing',  module: 'travel', title: '观光:门票·导览·拍照·景点应急' },
+    { id: 'travel-25-medical',      module: 'travel', title: '应急①:就医症状描述 + 药店' },
+    { id: 'travel-26-emergency',    module: 'travel', title: '应急②:拨 911 + 防骗拒推销' },
+    { id: 'travel-27-money-comms',  module: 'travel', title: '银行通讯:ATM·换汇·信用卡·SIM 卡' },
+    { id: 'travel-28-smalltalk',    module: 'travel', title: '社交:Small talk 闲聊模板' },
+    { id: 'travel-29-appendix',     module: 'travel', title: '收尾闭环:美式vs英式·标志缩略·行前清单' }
   ]);
 })();

@@ -43,7 +43,7 @@ assets/js/
   views-tools.js           快速复习 / 生词本错题本 / 搜索 / 设置
   engine.js                hash 路由 + 导航高亮 + 启动
 content/
-  modules.js               九大模块元信息 + 学习路线(path)
+  modules.js               十大模块元信息 + 学习路线(path)
   guide/*.js               导览 6 课
   pronunciation/*.js       发音 18 课
   vocabulary/*.js          词汇 12 课
@@ -52,7 +52,9 @@ content/
   speaking/*.js            口语 12 课
   reading/*.js             阅读 8 课
   writing/*.js             写作 10 课
-  culture/*.js             文化 9 课  —— 九大模块共 97 课,已全部做满
+  culture/*.js             文化 9 课
+  travel/*.js              旅行 29 课(场景闭环:行前→机场→入境→交通→酒店→餐饮→购物→观光→应急→银行通讯→社交→收尾)
+                           —— 十大模块共 126 课,已全部做满
 需求与讨论.md               需求、ADR、体验层原则 —— 本项目的宪法
 ```
 
